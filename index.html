@@ -26,9 +26,7 @@
     </header>
 
     <main id="main-content" class="container" role="main">
-        <script>
-        const apiKey = '%%GAP_KEY%%';
-    </script>
+        
         <section class="contact-section">
             <h1>Contact Us</h1>
             <p class="contact-intro">Have questions about plasma physics or interested in contributing? We'd love to hear from you.</p>
@@ -36,7 +34,7 @@
             <div class="contact-grid">
                 <div class="contact-form-container">
                     <h2>Send us a Message</h2>
-                    <form class="contact-form" id="contactForm" method="POST" action=${apiKey}>
+                    <form class="contact-form" id="contactForm" method="POST" action=${{secrets.GAP_KEY}}>
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
